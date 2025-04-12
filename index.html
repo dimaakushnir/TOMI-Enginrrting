@@ -126,7 +126,8 @@
                             <a href="about.html" class="menu-header__link text_medium">About Us</a>
                         </li>
                         <li class="menu-header__item">
-                            <a href="" class="menu-header__link text_medium">Contact</a>
+                            <a href="" class="menu-header__link text_medium link-scroll"
+                                data-scroll="contacts">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -156,7 +157,8 @@
                             </form>
                         </div>
                     </div>
-                    <a href="" class="header__btn-request text_small" data-da="mobile-header__content, 2, 1100">Request
+                    <a href="" class="header__btn-request text_small link-scroll" data-scroll="contacts"
+                        data-da="mobile-header__content, 2, 1100">Request
                         a Quote</a>
                 </div>
                 <button class="header__burger">
@@ -735,7 +737,8 @@
                         </div>
                     </div>
                     <div class="capabilities-home__bottom bottom-capabilities-home">
-                        <a href="" class="bottom-capabilities-home__btn btn btn_black">
+                        <a href="" class="bottom-capabilities-home__btn btn btn_black link-scroll"
+                            data-scroll="contacts">
                             Request a Quote
                             <span class="btn__arrow">
                                 <svg>
@@ -822,6 +825,33 @@
                                     </svg>
                                 </button>
                                 <button class="navigation__btn navigation__btn_next gallery-home__btn_next">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Контейнер для слайдера -->
+                    <div class="custom-gallery-modal" data-gallery="gallery" style="display: none;">
+                        <div class="custom-gallery-modal__overlay"></div>
+                        <div class="custom-gallery-modal__content">
+                            <button class="custom-gallery-modal__close">
+                                <img src="img/icons/close.svg" alt="close">
+                            </button>
+                            <div class="swiper main-slider">
+                                <div class="swiper-wrapper"></div>
+                            </div>
+                            <div class="thumbs-slider__container">
+                                <button class="navigation__btn navigation__btn_prev thumbs-slider-1__btn_prev">
+                                    <svg>
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </button>
+                                <div class="swiper thumbs-slider">
+                                    <div class="swiper-wrapper"></div>
+                                </div>
+                                <button class="navigation__btn navigation__btn_next thumbs-slider-1__btn_next">
                                     <svg>
                                         <use xlink:href="#arrow"></use>
                                     </svg>
@@ -929,7 +959,7 @@
                     </div>
                 </div>
             </section>
-            <section class="home__contacts contacts">
+            <section class="home__contacts contacts" id="contacts">
                 <div class="contacts__container container">
                     <div class="contacts__row">
                         <div class="contacts__column">
@@ -1092,7 +1122,8 @@
                             <a href="" class="menu-footer__link text_medium">Materials</a>
                         </li>
                         <li class="menu-footer__item">
-                            <a href="" class="menu-footer__link text_medium">Contact</a>
+                            <a href="" class="menu-footer__link text_medium link-scroll"
+                                data-scroll="contacts">Contact</a>
                         </li>
                     </ul>
                 </nav>
